@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="324dp"
+        android:text="@string/contrase_a"
+        android:textSize="16sp"
+         />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="252dp"
+        android:layout_height="171dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="16dp"
+
+        app:srcCompat="@drawable/direhospitality" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="224dp"
+        android:text="Usuario"
+        android:textSize="16sp"
+         />
+
+    <EditText
+        android:id="@+id/emailAcceso"
+        android:layout_width="291dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="256dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/passwordAcceso"
+        android:layout_width="292dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="360dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/botonAcceder"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="428dp"
+        android:onClick="onIni"
+        android:text="@string/acceder" />
+
+    <Button
+        android:id="@+id/botonHeOlvidadoPassword"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="480dp"
+        android:onClick="onClickContraseñaOlvidada"
+        android:text="@string/he_olvidado_la_contrase_a" />
+
+    <Button
+        android:id="@+id/botonRegistroLogin"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="530dp"
+        android:onClick="onClickNuevoUser"
+        android:text="@string/registrarme" />
+
+</FrameLayout>
